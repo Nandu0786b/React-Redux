@@ -17,23 +17,23 @@ export const userSlice=createSlice({
             state.pNumber = pNumber;
             state.country = country;
           },
-        UpdateName:()=>{
-
+        UpdateName:(state,action)=>{
+            state.name=action.payload
         },
-        Updatenumber:()=>{
-            
+        Updatenumber:(state,action)=>{
+            state.pNumber=action.payload
         },
-        Updatecountry:()=>{
-            
+        Updatecountry:(state,action)=>{
+            state.country=action.payload
         },
-        Updateplan:()=>{
-            
+        Updateplan:(state,action)=>{
+            state.Plan=action.payload
         },
-        Updatevaluei:()=>{
-            
+        Updatevaluei:(state,action)=>{
+            state.value=action.payload
         },
-        Updatevalued:()=>{
-            
+        Updatevalued:(state,action)=>{
+            state.name=action.payload
         }
     }
 })
